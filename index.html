@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+    }
+
+    .precio {
+      color: #28a745;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda Online</h1>
+    <p>Los mejores productos al mejor precio</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Bienvenido a Nuestra Tienda</h1>
+    <p>Encuentra tecnología, accesorios y más</p>
+  </section>
+
+  <section class="productos" id="productos">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000" alt="Producto 1">
+      <div class="card-content">
+        <h3>Smartphone</h3>
+        <p class="precio">$499</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000" alt="Producto 2">
+      <div class="card-content">
+        <h3>Audífonos</h3>
+        <p class="precio">$89</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1000" alt="Producto 3">
+      <div class="card-content">
+        <h3>Laptop</h3>
+        <p class="precio">$999</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000" alt="Producto 4">
+      <div class="card-content">
+        <h3>Zapatillas</h3>
+        <p class="precio">$120</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>© 2026 Sebastian tiendas | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
